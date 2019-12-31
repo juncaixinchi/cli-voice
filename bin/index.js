@@ -11,8 +11,11 @@ program
   .parse(process.argv)
 
 const word = program.args[0]
-if (word) {
+const isEnglishWord = /[a-zA-Z0-9]+/
+if (!word) {
+  program.outputHelp()
+} else if (isEnglishWord.test(word)) {
   voice(word)
 } else {
-  program.outputHelp()
+  console.error('\nError: Please input a valid English word!')
 }
