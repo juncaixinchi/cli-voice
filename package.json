@@ -1,0 +1,23 @@
+{
+  "name": "cli-voice",
+  "version": "1.0.0",
+  "description": "命令行发音工具",
+  "bin": {
+    "voice": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "voice"
+  ],
+  "author": "juncaixinchi",
+  "license": "MIT",
+  "dependencies": {
+    "cli-spinner": "^0.2.10",
+    "commander": "^4.0.1",
+    "mp3wav": "^0.0.4",
+    "request": "^2.88.0"
+  }
+}
